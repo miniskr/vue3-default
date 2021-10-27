@@ -1,9 +1,10 @@
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue';
+
 defineProps({
   msg: {
     type: String,
-    default: ""
+    default: '',
   },
 });
 

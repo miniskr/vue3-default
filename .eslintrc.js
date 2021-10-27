@@ -4,8 +4,8 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'plugin:vue/vue3-recommended',
     'airbnb-base',
+    'plugin:vue/vue3-recommended',
   ],
   parserOptions: {
     ecmaVersion: 13,
@@ -24,5 +24,6 @@ module.exports = {
       },
     }],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'no-undef': 'off',
   },
 };
