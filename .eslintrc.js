@@ -1,9 +1,11 @@
 module.exports = {
   env: {
-    browser: true,
+    node: true,
     es2021: true,
   },
   extends: [
+    'eslint:recommended',
+    'plugin:import/recommended',
     'airbnb-base',
     'plugin:vue/vue3-recommended',
   ],
@@ -24,7 +26,11 @@ module.exports = {
       },
     }],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/extensions': ['error', { ignore: ['^@/'] }],
+    'import/no-unresolved': 'off',
     'no-undef': 'off',
     'linebreak-style': ['error', 'windows'],
+    'func-names': ['error', 'as-needed'],
+    'import/prefer-default-export': 'off',
   },
 };

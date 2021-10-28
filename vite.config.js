@@ -1,10 +1,14 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import Inspect from 'vite-plugin-inspect';
+import eslintPlugin from 'vite-plugin-eslint';
 import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    fs: { strict: false },
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
@@ -12,5 +16,5 @@ export default defineConfig({
     },
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
   },
-  plugins: [vue(), Inspect()],
+  plugins: [vue(), Inspect(), eslintPlugin()],
 });
