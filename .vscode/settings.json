@@ -1,9 +1,10 @@
 {
-  "editor.fontFamily": "'JetBrains Mono' ,Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'JetBrains Mono Light' ,Consolas, 'Courier New', monospace",
   "editor.fontSize": 20,
   "editor.fontLigatures": true,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.codeActionsOnSave": {
+    "source.fixAll": true,
     "source.fixAll.eslint": true
   },
 
@@ -15,5 +16,11 @@
   ],
 
   "vetur.validation.template": false,
-  "html.format.endWithNewline": true
+  "html.format.endWithNewline": true,
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
 }

@@ -25,5 +25,6 @@ module.exports = {
     }],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'no-undef': 'off',
+    'linebreak-style': ['error', 'windows'],
   },
 };
